@@ -22,7 +22,7 @@
   }
 
   &Card {
-    @apply h-[40vh] py-[1.447vw] px-[1.736vw] rounded-[1.389vw] flex-1;
+    @apply h-[40vh] py-[1.447vw] px-[1.736vw] rounded-[1.389vw] flex-1 opacity-0 translate-y-1/4;
 
     background-color: $gray-4;
 

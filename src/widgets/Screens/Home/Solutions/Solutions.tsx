@@ -43,7 +43,10 @@ export const Solutions = () => {
         </div>
         <div className={styles.solutionsCards}>
           {solutionsCards.map((card) => (
-            <div className={styles.solutionsCard}>
+            <div
+              data-duration="1"
+              className={clsx(styles.solutionsCard, 'reveal')}
+            >
               <div className={styles.solutionsCardText}>
                 <p className={styles.title}>{card.title}</p>
                 <p className={styles.text}>{card.text}</p>
