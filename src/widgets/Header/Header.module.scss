@@ -1,0 +1,19 @@
+.header {
+  @apply fixed top-0 left-0 right-0 w-full flex items-center justify-between px-[2.894vw] py-[1vw] backdrop-blur-[0.5vw] z-[10];
+
+  &Logo {
+    @apply w-[6.250vw] h-[1.852vw];
+  }
+
+  &Nav {
+    @apply flex items-center gap-[2.025vw];
+
+    &Link {
+      @apply text-[1.157vw] leading-[125%] font-semibold;
+    }
+  }
+
+  &Buttons {
+    @apply flex items-center gap-[0.868vw];
+  }
+}

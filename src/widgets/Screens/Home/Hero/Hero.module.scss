@@ -1,0 +1,80 @@
+.hero {
+  &Container {
+    @apply w-full px-[4.398vw] h-fit pb-[4.340vw] gap-[12.2vh] flex flex-col pt-[20vh];
+  }
+
+  &Wrapper {
+    @apply flex items-center flex-col gap-[4.5vh];
+
+    &Buttons {
+      @apply flex items-center gap-[1.447vw];
+    }
+  }
+
+  &Blocks {
+    @apply w-full flex gap-[0.984vw] items-stretch;
+  }
+
+  &Block {
+    @apply flex flex-col gap-[2vh] flex-1 h-[42.5vh] px-[1.736vw] py-[1.447vw] rounded-[1.389vw] bg-white;
+
+    &:nth-child(1) {
+      .heroBlockIcon {
+        background-color: rgba(215, 215, 219, 0.25);
+      }
+    }
+
+    &:nth-child(2) {
+      .heroBlockIcon {
+        background-color: rgba(253, 167, 217, 0.25);
+      }
+    }
+
+    &:nth-child(3) {
+      .heroBlockIcon {
+        background-color: rgba(43, 190, 175, 0.25);
+      }
+    }
+
+    &:nth-child(4) {
+      .heroBlockIcon {
+        background-color: rgba(215, 215, 219, 0.25);
+      }
+    }
+
+    &Icon {
+      @apply w-[2.894vw] h-[2.894vw] rounded-[0.694vw] flex items-center justify-center;
+
+      img {
+        @apply w-[1.389vw] h-[1.389vw] object-contain object-center;
+      }
+    }
+
+    &Content {
+      @apply flex-1 flex flex-col justify-between items-start;
+
+      .text {
+        @apply flex flex-col gap-[1.5vh] w-full;
+
+        .title {
+          @apply text-[1.389vw] font-semibold leading-[105%];
+        }
+
+        .subtitle {
+          @apply font-medium leading-[130%];
+        }
+      }
+
+      .pills {
+        @apply w-full flex flex-wrap gap-[0.289vw];
+
+        .pill {
+          @apply px-[0.579vw] py-[0.694vw] text-[0.694vw] font-semibold leading-[100%] rounded-[0.347vw];
+
+          border: 0.059vw solid $gray-2;
+          color: $black-5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.solutions {
+  @apply pt-[6.8vh] px-[2.315vw] pb-[2.6vh];
+
+  &Container {
+    @apply bg-white rounded-[1.389vw] py-[12.5vh] px-[5.787vw] flex flex-col gap-[10.5vh];
+  }
+
+  &Wrapper {
+    @apply flex gap-[12.731vw] items-end;
+  }
+
+  &Title {
+    @apply flex flex-col items-start gap-[3vh];
+  }
+
+  &Text {
+    @apply flex flex-col items-start gap-[4vh] max-w-[25.174vw];
+  }
+
+  &Cards {
+    @apply w-full flex gap-[2.025vw] items-stretch;
+  }
+
+  &Card {
+    @apply h-[40vh] py-[1.447vw] px-[1.736vw] rounded-[1.389vw] flex-1;
+
+    background-color: $gray-4;
+
+    &Text {
+      @apply flex flex-col gap-[2vh];
+
+      .title {
+        @apply text-[1.157vw] font-semibold leading-[125%] max-w-[60%] w-full;
+
+        letter-spacing: 0.012vw !important;
+      }
+
+      .text {
+        @apply font-medium leading-[130%];
+      }
+    }
+  }
+}
