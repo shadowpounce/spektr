@@ -1,0 +1,93 @@
+.useCases {
+  @apply bg-white;
+
+  &Container {
+    @apply w-full px-[11.574vw] pt-[10vh] pb-[18.5vh];
+  }
+
+  &Wrapper {
+    @apply w-full flex flex-col items-center gap-[6.4vh];
+  }
+
+  &Title {
+    @apply flex flex-col items-center gap-[4vh];
+
+    .title {
+      @apply flex flex-col items-center text-center gap-[3vh];
+    }
+  }
+
+  &Persons {
+    @apply w-full flex items-stretch gap-[1.273vw] h-[65vh];
+  }
+
+  &Persona {
+    @apply pt-[3.472vw] pr-[3.472vw] pl-[2.604vw] pb-[2.604vw] flex flex-col justify-between items-start rounded-[1.389vw] relative;
+
+    .process {
+      @apply w-[21.991vw] h-[27.894vw] absolute right-[3.646vw] top-1/2 translate-y-[-50%];
+
+      box-shadow: -0.116vw 0.463vw 2.025vw 0 rgba(0, 0, 0, 0.07);
+
+      img {
+        @apply w-full h-full object-contain object-center;
+      }
+    }
+
+    .title {
+      @apply flex flex-col gap-[2.5vh];
+    }
+
+    .list {
+      @apply flex flex-col gap-[2.2vh];
+
+      .item {
+        @apply flex items-center gap-[0.694vw];
+
+        &::before {
+          content: '';
+
+          @apply w-[1.447vw] h-[1.447vw] bg-no-repeat bg-center bg-contain;
+
+          background-image: url('/public/images/icons/white-check.svg');
+        }
+      }
+    }
+
+    .group {
+      @apply flex flex-col;
+    }
+
+    &:first-child {
+      @apply max-w-[24.711vw] w-full;
+
+      background-color: $gray-4;
+
+      .group {
+        @apply gap-[2.5vh];
+      }
+
+      .svg {
+        @apply w-[14.468vw] h-auto mx-auto;
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+
+    &:last-child {
+      @apply max-w-[50.926vw] w-full;
+
+      background-color: $black-2;
+
+      .group {
+        @apply gap-[6vh];
+
+        button {
+          color: $gray !important;
+        }
+      }
+    }
+  }
+}

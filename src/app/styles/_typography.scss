@@ -12,15 +12,30 @@ h2 {
 }
 
 h3 {
+  font-size: 2.315vw !important;
+  line-height: 110% !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.051vw !important;
 }
 
 h4 {
+  font-size: 1.852vw !important;
+  line-height: 120% !important;
+  font-weight: 600 !important;
 }
 
 h5 {
 }
 
 h6 {
+}
+
+.link {
+  @apply font-semibold leading-[120%];
+}
+
+.link-2 {
+  @apply text-[1.157vw] font-semibold leading-[125%] tracking-[0.012vw];
 }
 
 .text-2 {
@@ -31,4 +46,9 @@ h6 {
 .main-text {
   @apply text-[1.157vw] font-normal leading-[120%];
   color: $black-4;
+}
+
+.card-text {
+  @apply font-medium leading-[130%];
+  color: $black-5;
 }

@@ -2,6 +2,7 @@ import clsx from 'clsx'
 import styles from './Solutions.module.scss'
 import { GsapMagnetic } from '../../../../shared/GsapMagnetic/GsapMagnetic'
 import { solutionsCards } from './data'
+import { CircleButton } from '../../../../shared/CircleButton/CircleButton'
 
 export const Solutions = () => {
   return (
@@ -19,26 +20,7 @@ export const Solutions = () => {
               Our process map approach streamlines ongoing due diligence,
               offering <b>simplicity, adaptability, and precision. </b>
             </p>
-            <GsapMagnetic>
-              <button className="button circle-arrow">
-                <div className="text">
-                  <span>Read more</span>
-                  <span>Read more</span>
-                </div>
-                <div className="arrow">
-                  <div className="icon">
-                    <img
-                      src="/public/images/icons/button-white-arrow-left.svg"
-                      alt=""
-                    />
-                    <img
-                      src="/public/images/icons/button-white-arrow-left.svg"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </button>
-            </GsapMagnetic>
+            <CircleButton text={'Read more'} />
           </div>
         </div>
         <div className={styles.solutionsCards}>

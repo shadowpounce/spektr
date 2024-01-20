@@ -1,0 +1,21 @@
+.blog {
+  &Container {
+    @apply px-[11.574vw] py-[18vh] pb-[8.2vh] flex flex-col items-stretch gap-[19vh];
+  }
+
+  &Wrapper {
+    @apply flex flex-col gap-[10vh];
+  }
+
+  &Title {
+    @apply flex flex-col gap-[3vh] items-center;
+  }
+
+  &Cards {
+    @apply flex gap-[2.315vw] items-stretch;
+
+    > div {
+      @apply flex-1;
+    }
+  }
+}

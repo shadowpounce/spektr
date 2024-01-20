@@ -1,0 +1,17 @@
+.bookDemoBanner {
+  @apply py-[8.5vh] px-[3.848vw] rounded-[1.389vw] relative w-full;
+
+  background-color: $black-2;
+
+  .content {
+    @apply flex flex-col items-start gap-[3.5vh];
+
+    .title {
+      @apply flex flex-col gap-[2.5vh];
+    }
+  }
+
+  .graph {
+    @apply absolute right-0 top-1/2 translate-y-[-50%] w-[41.956vw] h-auto;
+  }
+}

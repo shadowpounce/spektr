@@ -1,0 +1,73 @@
+.trust {
+  @apply h-screen flex flex-col;
+
+  &Container {
+    @apply w-full flex-1 flex justify-center py-[7.5vh];
+  }
+
+  &Wrapper {
+    @apply flex flex-col gap-[10.8vh] max-w-[64.236vw] w-full;
+  }
+
+  &Title {
+    @apply flex flex-col gap-[3vh] items-center text-center;
+  }
+
+  &Content {
+    @apply flex gap-[10.127vw] items-start;
+  }
+
+  &Investors {
+    @apply flex flex-col gap-[1.8vh] max-w-[25.174vw] w-full;
+
+    .card {
+      @apply p-[1.157vw] w-full flex items-start relative h-[19.965vw] rounded-[1.389vw] overflow-hidden;
+
+      &Bg {
+        @apply w-full h-full absolute left-0 top-0 pointer-events-none z-[-1];
+
+        svg {
+          @apply w-full h-full;
+        }
+      }
+    }
+
+    .label {
+      @apply p-[1.447vw] pt-[1.157vw] pr-[1.157vw] flex flex-col gap-[0.6vh] w-full bg-white rounded-[1.389vw];
+
+      .row {
+        @apply flex items-center justify-between;
+      }
+    }
+  }
+
+  &TextBlocks {
+    @apply relative;
+
+    .blocks {
+      @apply flex flex-col gap-[13.3vh] max-w-[30.671vw] w-full max-h-[60vh] h-full overflow-y-scroll;
+
+      &::-webkit-scrollbar {
+        @apply appearance-none;
+      }
+    }
+
+    .fade {
+      @apply absolute bottom-0 left-0 w-full h-[35%] pointer-events-none;
+
+      background: linear-gradient(
+        0deg,
+        rgba(247, 247, 248, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+
+  &TextBlock {
+    @apply flex flex-col gap-[4.8vh];
+
+    .texts {
+      @apply flex flex-col gap-[3vh];
+    }
+  }
+}
