@@ -3,6 +3,7 @@ import { MainContext } from './Context/MainContext'
 import { useLocation } from 'react-router-dom'
 import { Header } from '../../widgets/Header/Header'
 import { WithScrollSmoother } from './WithScrollSmoother'
+import { Footer } from '../../widgets/Footer/Footer'
 
 interface IProps {
   children: ReactNode
@@ -32,7 +33,10 @@ export const Layout: FC<IProps> = ({ children }) => {
       }}
     >
       <Header />
-      <WithScrollSmoother>{children}</WithScrollSmoother>
+      <WithScrollSmoother>
+        {children}
+        <Footer />
+      </WithScrollSmoother>
     </MainContext.Provider>
   )
 }

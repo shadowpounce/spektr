@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import styles from './Solutions.module.scss'
-import { GsapMagnetic } from '../../../../shared/GsapMagnetic/GsapMagnetic'
 import { solutionsCards } from './data'
 import { CircleButton } from '../../../../shared/CircleButton/CircleButton'
 
@@ -32,6 +31,15 @@ export const Solutions = () => {
               <div className={styles.solutionsCardText}>
                 <p className={styles.title}>{card.title}</p>
                 <p className={styles.text}>{card.text}</p>
+              </div>
+              <div
+                style={{
+                  height: card.svgHeight,
+                  width: card.svgWidth,
+                }}
+                className={styles.solutionsCardGraph}
+              >
+                {card.svg}
               </div>
             </div>
           ))}

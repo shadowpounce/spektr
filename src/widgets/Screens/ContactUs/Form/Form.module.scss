@@ -1,0 +1,29 @@
+.form {
+  &Container {
+    @apply px-[11.574vw] pt-[22vh] pb-[7.1vh] w-full;
+  }
+
+  &Wrapper {
+    @apply w-full flex justify-between;
+  }
+
+  &Text {
+    @apply flex flex-col items-start gap-[6vh];
+
+    .group {
+      @apply flex flex-col gap-[4vh] items-start;
+
+      p[class*='main-text'] {
+        @apply max-w-[24.306vw] w-full;
+      }
+    }
+  }
+
+  &Element {
+    @apply max-w-[25.752vw] w-full;
+  }
+
+  &Title {
+    @apply flex flex-col items-start gap-[3vh];
+  }
+}

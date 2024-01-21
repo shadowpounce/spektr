@@ -27,7 +27,7 @@ body {
 }
 
 .descriptor {
-  @apply p-[0.926vw] rounded-[5.787vw] flex items-center justify-center font-bold leading-[150%] text-[0.810vw];
+  @apply p-[0.926vw] rounded-[5.787vw] flex items-center justify-center font-bold leading-[150%] text-[0.810vw] gap-[0.579vw];
 
   background-color: $gray-4;
   color: $black-2;
@@ -40,6 +40,10 @@ body {
     background-color: $black-3;
     border: 0.059vw solid $gray;
     color: #fff;
+  }
+
+  img {
+    @apply w-[0.694vw] h-[0.694vw] gap-[0.579vw];
   }
 }
 
@@ -166,12 +170,51 @@ body {
   }
 }
 
-.black-4 {
-  color: $black-4;
+.checkbox {
+  @apply w-[1.042vw] h-[1.042vw] rounded-[0.347vw] appearance-none;
+
+  border: 0.059vw solid $black-5;
+}
+
+.checkbox-group {
+  @apply flex items-center gap-[0.752vw];
+}
+
+.btn-submit {
+  @apply min-h-[5vh] h-[5vh] flex items-center justify-center min-w-[8.391vw] w-fit px-[1.331vw] text-white leading-[120%] font-semibold rounded-[0.347vw] transition-colors duration-[400ms];
+
+  background-color: $black-2;
+
+  &:hover {
+    background-color: #fff;
+    color: $black-2;
+  }
+
+  border: 0.059vw solid $gray;
+}
+
+.input {
+  @apply py-[0.926vw] pl-[0.868vw] pr-[2.604vw] min-h-[5vh] h-[5vh] rounded-[0.347vw] font-semibold leading-[120%];
+
+  color: $black-7;
+
+  border: 0.059vw solid $black-5;
 }
 
 .black-2 {
   color: $black-2;
+}
+
+.black-4 {
+  color: $black-4;
+}
+
+.bgc-black-2 {
+  background-color: $black-2 !important;
+}
+
+.black-5 {
+  color: $black-5;
 }
 
 .black-7 {

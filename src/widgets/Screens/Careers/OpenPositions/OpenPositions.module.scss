@@ -1,0 +1,52 @@
+.openPositions {
+  &Container {
+    @apply w-full pt-[12vh] pb-[18.5vh] px-[11.574vw];
+  }
+
+  &Wrapper {
+    @apply w-full flex flex-col items-stretch gap-[9.5vh];
+  }
+
+  &Filtering {
+    @apply flex flex-col items-stretch gap-[7vh];
+
+    .filter {
+      &Head {
+        @apply w-full flex items-center justify-between py-[0.637vw] px-[1.157vw];
+
+        border-radius: 0.347vw;
+        border: 0.059vw solid $black-5;
+
+        img {
+          @apply w-[1.389vw] h-[1.389vw];
+        }
+      }
+    }
+
+    .listResults {
+      @apply flex items-stretch flex-col gap-[5vh];
+
+      .listItem {
+        @apply py-[5vh] flex flex-col gap-[3.5vh];
+
+        border-block: 0.059vw solid $black-4;
+
+        &:not(:last-child) {
+          border-bottom: 0 !important;
+        }
+
+        .row {
+          @apply w-full flex items-center justify-between;
+
+          .tags {
+            @apply flex items-center gap-[0.579vw];
+          }
+        }
+      }
+    }
+  }
+}
+
+.openPositionsBanner {
+  @apply w-full px-[11.574vw] pb-[8vh] pt-[18.4vh];
+}

@@ -1,0 +1,71 @@
+.footer {
+  @apply pt-[9.5vh] pb-[7.3vh] px-[11.574vw] flex flex-col items-stretch w-full gap-[8.5vh];
+
+  background-color: $black-2;
+
+  &LogoCol {
+    @apply flex flex-col justify-between;
+  }
+
+  &Logo {
+    @apply w-[7.812vw] h-[2.199vw];
+  }
+
+  &SocialLink {
+    @apply flex items-center gap-[0.579vw]  text-white;
+
+    .icon {
+      @apply w-[1.389vw] h-[1.389vw];
+    }
+  }
+
+  &Form {
+    @apply px-[2.604vw] pt-[0] flex flex-col items-stretch gap-[3vh] max-w-[31.539vw] w-full;
+
+    .desc {
+      @apply flex flex-col gap-[2vh] items-start;
+    }
+
+    .group {
+      @apply flex flex-col gap-[1.3vh];
+
+      div[class*='checkbox-group'] {
+        @apply whitespace-nowrap;
+      }
+
+      .inputRow {
+        @apply w-full flex items-center gap-[1.447vw];
+      }
+    }
+  }
+
+  &Col {
+    @apply flex flex-col gap-[1vh];
+
+    &Title {
+      @apply text-white leading-[156.25%] tracking-[0.009vw];
+    }
+
+    &List {
+      @apply flex flex-col gap-[0.5vh];
+
+      > li {
+        @apply font-medium leading-[156.25%] tracking-[0.009vw];
+
+        color: $black-7;
+      }
+    }
+  }
+
+  &Body {
+    @apply flex items-stretch justify-between;
+  }
+
+  &Bottom {
+    @apply flex items-center justify-between;
+
+    .group {
+      @apply flex items-center gap-[5.208vw];
+    }
+  }
+}

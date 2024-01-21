@@ -1,0 +1,46 @@
+.perks {
+  &Container {
+    @apply pt-[12.8vh] pb-[20vh] px-[11.574vw] w-full;
+  }
+
+  &Wrapper {
+    @apply w-full flex flex-col gap-[9.5vh];
+  }
+
+  &TitleRow {
+    @apply flex items-center justify-between w-full;
+  }
+
+  &Title {
+    @apply gap-[3vh] flex flex-col items-start;
+  }
+
+  &Blocks {
+    @apply grid gap-[1.447vw];
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30vh);
+    grid-auto-rows: 30vh;
+    grid-auto-columns: 1fr;
+  }
+
+  &Block {
+    @apply p-[1.447vw] pb-[2.025vw] flex flex-col gap-[2vh] rounded-[1.389vw] bg-white;
+
+    .icon {
+      @apply w-[2.604vw] h-[2.604vw] rounded-[0.694vw] flex items-center justify-center;
+
+      img {
+        @apply w-[1.389vw] h-[1.389vw] object-contain object-center;
+      }
+    }
+
+    .content {
+      @apply flex flex-col items-start gap-[1.5vh];
+
+      .title {
+        @apply text-[1.157vw] font-bold leading-[125%] tracking-[0.012vw];
+      }
+    }
+  }
+}

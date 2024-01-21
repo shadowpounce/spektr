@@ -1,0 +1,50 @@
+.welcome {
+  &Container {
+    @apply pl-[11.574vw] py-[9.5vh];
+  }
+
+  &Wrapper {
+    @apply w-full gap-[14vh] flex flex-col;
+  }
+
+  &Text {
+    @apply w-full pr-[11.574vw] text-[2.315vw] leading-[110%] tracking-[0.046vw];
+
+    color: $gray;
+  }
+
+  &CarouselWrapper {
+    @apply w-full h-[40vh];
+  }
+
+  &Carousel {
+    width: 100% !important;
+    height: 100% !important;
+
+    div[class*='swiper-wrapper'] {
+      width: 100% !important;
+      height: 40vh !important;
+
+      display: flex !important;
+
+      transition-timing-function: linear !important;
+      //   transition-duration: 0s !important;
+      //   transition-delay: 0s !important;
+    }
+
+    div[class*='swiper-slide'] {
+      pointer-events: none !important;
+      width: 20.255vw !important;
+      border-radius: 1.389vw !important;
+      overflow: hidden !important;
+
+      &:first-child {
+        width: 30.961vw !important;
+      }
+
+      img {
+        @apply w-full h-full object-cover object-center pointer-events-none;
+      }
+    }
+  }
+}

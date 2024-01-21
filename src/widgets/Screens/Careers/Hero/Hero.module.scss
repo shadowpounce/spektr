@@ -1,0 +1,9 @@
+.hero {
+  &Container {
+    @apply pt-[26vh] px-[11.574vw] flex flex-col gap-[6.2vh];
+  }
+
+  &Title {
+    @apply flex flex-col items-start gap-[3vh];
+  }
+}
