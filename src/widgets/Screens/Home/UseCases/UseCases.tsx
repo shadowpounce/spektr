@@ -1,10 +1,10 @@
-import clsx from 'clsx'
-import styles from './UseCases.module.scss'
-import { CircleButton } from '../../../../shared/CircleButton/CircleButton'
+import clsx from "clsx";
+import styles from "./UseCases.module.scss";
+import { CircleButton } from "../../../../shared/CircleButton/CircleButton";
 
 export const UseCases = () => {
   return (
-    <section className={clsx('section', styles.useCases)}>
+    <section className={clsx("section", styles.useCases)}>
       <div className={styles.useCasesContainer}>
         <div className={styles.useCasesWrapper}>
           <div className={styles.useCasesTitle}>
@@ -16,7 +16,7 @@ export const UseCases = () => {
                 commodo mi.
               </p>
             </div>
-            <CircleButton text={'Read more'} />
+            <CircleButton text={"Read more"} />
           </div>
           <div className={styles.useCasesPersons}>
             <div className={styles.useCasesPersona}>
@@ -72,8 +72,8 @@ export const UseCases = () => {
                   Lorem ipsum dolor sit amet consectetur.
                 </p>
                 <CircleButton
-                  colorType={'secondary'}
-                  text={'Read more about case '}
+                  colorType={"secondary"}
+                  text={"Read more about case "}
                 />
               </div>
             </div>
@@ -86,29 +86,29 @@ export const UseCases = () => {
               </div>
               <div className={styles.group}>
                 <div className={styles.list}>
-                  <a href="" className={clsx(styles.item, 'link-2 text-white')}>
+                  <a href="" className={clsx(styles.item, "link-2 text-white")}>
                     Lorem ipsum dolor sit.
                   </a>
-                  <a href="" className={clsx(styles.item, 'link-2 text-white')}>
+                  <a href="" className={clsx(styles.item, "link-2 text-white")}>
                     Lorem ipsum dolor sit.
                   </a>
-                  <a href="" className={clsx(styles.item, 'link-2 text-white')}>
+                  <a href="" className={clsx(styles.item, "link-2 text-white")}>
                     Lorem ipsum dolor sit.
                   </a>
                 </div>
 
                 <CircleButton
-                  text={'Read more about case '}
+                  text={"Read more about case "}
                   colorType="secondary"
                 />
               </div>
               <div className={styles.process}>
-                <img src="/public/images/Home/UseCases/process.png" alt="" />
+                <img src="/images/Home/UseCases/process.png" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

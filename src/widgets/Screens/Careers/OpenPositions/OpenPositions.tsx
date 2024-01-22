@@ -1,11 +1,11 @@
-import clsx from 'clsx'
-import styles from './OpenPositions.module.scss'
-import { BookDemoBanner } from '../../../../shared/BookDemoBanner/BookDemoBanner'
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap'
+import clsx from "clsx";
+import styles from "./OpenPositions.module.scss";
+import { BookDemoBanner } from "../../../../shared/BookDemoBanner/BookDemoBanner";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 export const OpenPositions = () => {
-  const root = useRef<HTMLDivElement>(null)
+  const root = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -17,12 +17,12 @@ export const OpenPositions = () => {
         animation: gsap
           .timeline()
           .to(document.body, {
-            backgroundColor: '#1a1a1e',
+            backgroundColor: "#1a1a1e",
           })
           .to(
-            '#header',
+            "#header",
             {
-              backgroundColor: '#f7f7f8',
+              backgroundColor: "#f7f7f8",
             },
             0
           )
@@ -30,26 +30,26 @@ export const OpenPositions = () => {
           .to(
             document.body,
             {
-              backgroundColor: '#f7f7f8',
+              backgroundColor: "#f7f7f8",
             },
             1
           )
           .to(
-            '#header',
+            "#header",
             {
-              backgroundColor: 'transparent',
+              backgroundColor: "transparent",
             },
             1
           ),
-      })
-    })
+      });
+    });
 
-    return () => ctx.revert()
-  }, [])
+    return () => ctx.revert();
+  }, []);
 
   return (
     <>
-      <section ref={root} className={clsx('section', styles.openPositions)}>
+      <section ref={root} className={clsx("section", styles.openPositions)}>
         <div className={styles.openPositionsContainer}>
           <div className={styles.openPositionsWrapper}>
             <div className={styles.openPositionsTitle}>
@@ -61,10 +61,7 @@ export const OpenPositions = () => {
               <div className={styles.filter}>
                 <div className={styles.filterHead}>
                   <p className="link-2 black-5">All departments</p>
-                  <img
-                    src="/public/images/icons/filter-white-arrow.svg"
-                    alt=""
-                  />
+                  <img src="/images/icons/filter-white-arrow.svg" alt="" />
                 </div>
               </div>
               <div className={styles.listResults}>
@@ -74,11 +71,11 @@ export const OpenPositions = () => {
                     <h4 className="text-white">Data Engineer</h4>
                     <div className={styles.tags}>
                       <div className="descriptor dark bgc-black-2">
-                        <img src="/public/images/icons/location.svg" alt="" />
+                        <img src="/images/icons/location.svg" alt="" />
                         Copenhagen
                       </div>
                       <div className="descriptor dark bgc-black-2">
-                        <img src="/public/images/icons/calendar.svg" alt="" />
+                        <img src="/images/icons/calendar.svg" alt="" />
                         Full-time
                       </div>
                     </div>
@@ -87,11 +84,11 @@ export const OpenPositions = () => {
                     <h4 className="text-white">Backend Engineer</h4>
                     <div className={styles.tags}>
                       <div className="descriptor dark bgc-black-2">
-                        <img src="/public/images/icons/location.svg" alt="" />
+                        <img src="/images/icons/location.svg" alt="" />
                         Copenhagen
                       </div>
                       <div className="descriptor dark bgc-black-2">
-                        <img src="/public/images/icons/calendar.svg" alt="" />
+                        <img src="/images/icons/calendar.svg" alt="" />
                         Full-time
                       </div>
                     </div>
@@ -103,11 +100,11 @@ export const OpenPositions = () => {
                     <h4 className="text-white">Senior Data Analyst</h4>
                     <div className={styles.tags}>
                       <div className="descriptor dark bgc-black-2">
-                        <img src="/public/images/icons/location.svg" alt="" />
+                        <img src="/images/icons/location.svg" alt="" />
                         Copenhagen
                       </div>
                       <div className="descriptor dark bgc-black-2">
-                        <img src="/public/images/icons/calendar.svg" alt="" />
+                        <img src="/images/icons/calendar.svg" alt="" />
                         Full-time
                       </div>
                     </div>
@@ -122,5 +119,5 @@ export const OpenPositions = () => {
         <BookDemoBanner />
       </div>
     </>
-  )
-}
+  );
+};

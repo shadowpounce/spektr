@@ -45,11 +45,11 @@
         @apply flex items-center gap-[0.694vw];
 
         &::before {
-          content: '';
+          content: "";
 
           @apply w-[1.447vw] h-[1.447vw] bg-no-repeat bg-center bg-contain;
 
-          background-image: url('/public/images/icons/white-check.svg');
+          background-image: url("/images/icons/white-check.svg");
         }
       }
     }
