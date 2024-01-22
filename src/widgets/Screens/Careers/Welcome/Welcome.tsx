@@ -1,30 +1,30 @@
-import clsx from 'clsx'
-import styles from './Welcome.module.scss'
-import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper'
-import { useEffect, useRef, useState } from 'react'
-import { ISwiper } from '../../../../interfaces'
+import clsx from "clsx";
+import styles from "./Welcome.module.scss";
+import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
+import { useEffect, useRef, useState } from "react";
+import { ISwiper } from "../../../../interfaces";
 
 export const Welcome = () => {
-  const [swiper, setSwiper] = useState<ISwiper>()
+  const [swiper, setSwiper] = useState<ISwiper>();
 
-  const swiperRef = useRef<HTMLDivElement>(null)
+  const swiperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (swiper) {
       if (!swiper.destroyed && swiperRef.current) {
         if (swiperRef.current) {
-          swiperRef.current.addEventListener('mouseenter', () => {
-            swiper.autoplay.pause()
-            console.log(swiper)
-          })
+          swiperRef.current.addEventListener("mouseenter", () => {
+            swiper.autoplay.pause();
+            console.log(swiper);
+          });
         }
       }
     }
-  }, [swiper, swiperRef])
+  }, [swiper, swiperRef]);
 
   return (
-    <section className={clsx('section', styles.welcome)}>
+    <section className={clsx("section", styles.welcome)}>
       <div className={styles.welcomeContainer}>
         <div className={styles.welcomeWrapper}>
           <p className={styles.welcomeText}>
@@ -35,7 +35,7 @@ export const Welcome = () => {
           </p>
           <div ref={swiperRef} className={styles.welcomeCarouselWrapper}>
             <Swiper
-              slidesPerView={'auto'}
+              slidesPerView={"auto"}
               spaceBetween={(30 / 1728) * window.innerWidth}
               centeredSlides={true}
               autoplay={{
@@ -48,21 +48,21 @@ export const Welcome = () => {
               className={styles.welcomeCarousel}
             >
               <SwiperSlide>
-                <img src="/public/images/Careers/Welcome/1.png" alt="" />
+                <img src="/images/Careers/Welcome/1.png" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/public/images/Careers/Welcome/2.png" alt="" />
+                <img src="/images/Careers/Welcome/2.png" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/public/images/Careers/Welcome/3.png" alt="" />
+                <img src="/images/Careers/Welcome/3.png" alt="" />
               </SwiperSlide>
               <SwiperSlide>
-                <img src="/public/images/Careers/Welcome/4.png" alt="" />
+                <img src="/images/Careers/Welcome/4.png" alt="" />
               </SwiperSlide>
             </Swiper>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

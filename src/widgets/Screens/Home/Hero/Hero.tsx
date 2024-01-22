@@ -1,10 +1,10 @@
-import styles from './Hero.module.scss'
-import clsx from 'clsx'
-import { heroCards } from './data'
+import styles from "./Hero.module.scss";
+import clsx from "clsx";
+import { heroCards } from "./data";
 
 export const Hero = () => {
   return (
-    <section className={clsx('section', styles.hero)}>
+    <section className={clsx("section", styles.hero)}>
       <div className={styles.heroContainer}>
         <div className={styles.heroWrapper}>
           <h1 className="text-center">
@@ -19,7 +19,7 @@ export const Hero = () => {
               Get started
               <img
                 className="button-arrow"
-                src="/public/images/icons/button-black-arrow-right.svg"
+                src="/images/icons/button-black-arrow-right.svg"
                 alt=""
               />
             </a>
@@ -27,7 +27,7 @@ export const Hero = () => {
               Request Demo
               <img
                 className="button-icon"
-                src="/public/images/icons/stars-emoji.png"
+                src="/images/icons/stars-emoji.png"
                 alt=""
               />
             </a>
@@ -39,7 +39,7 @@ export const Hero = () => {
               data-delay={`${idx * 0.065}`}
               className={clsx(
                 styles.heroBlock,
-                'reveal translate-y-1/4 opacity-0'
+                "reveal translate-y-1/4 opacity-0"
               )}
             >
               <div className={styles.heroBlockIcon}>
@@ -61,5 +61,5 @@ export const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

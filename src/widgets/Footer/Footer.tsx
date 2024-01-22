@@ -1,18 +1,18 @@
-import clsx from 'clsx'
-import styles from './Footer.module.scss'
-import { Logo } from '../../shared/Logo/Logo'
+import clsx from "clsx";
+import styles from "./Footer.module.scss";
+import { Logo } from "../../shared/Logo/Logo";
 
 export const Footer = () => {
   return (
-    <footer className={clsx('footer', styles.footer)}>
+    <footer className={clsx("footer", styles.footer)}>
       <div className={styles.footerBody}>
         <div className={styles.footerLogoCol}>
           <div className={styles.footerLogo}>
             <Logo type="secondary" />
           </div>
-          <a href="" className={clsx(styles.footerSocialLink, 'link')}>
+          <a href="" className={clsx(styles.footerSocialLink, "link")}>
             <img
-              src="/public/images/icons/linkedin.svg"
+              src="/images/icons/linkedin.svg"
               alt=""
               className={styles.icon}
             />
@@ -94,7 +94,7 @@ export const Footer = () => {
             <div className="checkbox-group">
               <input type="text" className="checkbox" />
               <label className="black-7" htmlFor="">
-                I agree to receive personalized marketing emails.{' '}
+                I agree to receive personalized marketing emails.{" "}
                 <span className="underline">Read more.</span>
               </label>
             </div>
@@ -119,5 +119,5 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};

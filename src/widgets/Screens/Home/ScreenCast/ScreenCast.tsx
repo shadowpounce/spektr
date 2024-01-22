@@ -1,13 +1,13 @@
-import clsx from 'clsx'
-import styles from './ScreenCast.module.scss'
-import { steps } from './data'
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap'
-import { GsapMagnetic } from '../../../../shared/GsapMagnetic/GsapMagnetic'
+import clsx from "clsx";
+import styles from "./ScreenCast.module.scss";
+import { steps } from "./data";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { GsapMagnetic } from "../../../../shared/GsapMagnetic/GsapMagnetic";
 
 export const ScreenCast = () => {
-  const root = useRef<HTMLDivElement>(null)
-  const rootContainer = useRef<HTMLDivElement>(null)
+  const root = useRef<HTMLDivElement>(null);
+  const rootContainer = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -19,12 +19,12 @@ export const ScreenCast = () => {
         animation: gsap
           .timeline()
           .to(document.body, {
-            backgroundColor: '#27272C',
+            backgroundColor: "#27272C",
           })
           .to(
-            '#header',
+            "#header",
             {
-              backgroundColor: '#f7f7f8',
+              backgroundColor: "#f7f7f8",
             },
             0
           )
@@ -40,14 +40,14 @@ export const ScreenCast = () => {
           .to(
             document.body,
             {
-              backgroundColor: '#f7f7f8',
+              backgroundColor: "#f7f7f8",
             },
             1
           )
           .to(
-            '#header',
+            "#header",
             {
-              backgroundColor: 'transparent',
+              backgroundColor: "transparent",
             },
             1
           )
@@ -60,20 +60,20 @@ export const ScreenCast = () => {
             },
             1
           ),
-      })
-    })
+      });
+    });
 
-    return () => ctx.revert()
-  }, [])
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <section ref={root} className={clsx('section', styles.screenCast)}>
+    <section ref={root} className={clsx("section", styles.screenCast)}>
       <div ref={rootContainer} className={styles.screenCastContainer}>
         <GsapMagnetic>
           <button className="button primary-rounded">Journey</button>
         </GsapMagnetic>
         <div className={styles.screenCastVideo}>
-          <img src="/public/images/Home/ScreenCast/video-preview.png" alt="" />
+          <img src="/images/Home/ScreenCast/video-preview.png" alt="" />
 
           <div className={styles.screenCastSteps}>
             <div className={styles.steps}>
@@ -89,7 +89,7 @@ export const ScreenCast = () => {
                       </div>
                       <div className={styles.devider}></div>
                     </>
-                  )
+                  );
                 } else {
                   return (
                     <div className={styles.step}>
@@ -98,7 +98,7 @@ export const ScreenCast = () => {
                       </div>
                       <p>{step.title}</p>
                     </div>
-                  )
+                  );
                 }
               })}
             </div>
@@ -117,5 +117,5 @@ export const ScreenCast = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
