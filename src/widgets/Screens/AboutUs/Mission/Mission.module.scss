@@ -1,0 +1,41 @@
+.mission {
+  &Container {
+    @apply py-[12.5vh] px-[11.574vw] flex flex-col items-stretch;
+  }
+
+  &Title {
+    @apply flex flex-col gap-[3.5vh] items-start;
+  }
+
+  &Wrapper {
+    @apply justify-between flex items-stretch;
+  }
+
+  &Team {
+    @apply w-[38.310vw] h-[42.766vw] rounded-[1.389vw] overflow-hidden;
+
+    img {
+      @apply w-full h-full object-cover object-center;
+    }
+  }
+
+  &Column {
+    @apply flex flex-col justify-between items-start;
+
+    p[class*='main-text'] {
+      @apply max-w-[24.306vw] w-full pt-[6vh];
+    }
+
+    .group {
+      @apply flex flex-col items-start gap-[3vh] max-w-[17.535vw] w-full;
+
+      .logos {
+        @apply w-full flex flex-wrap gap-[1.447vw];
+
+        > img {
+          @apply max-w-[7.812vw] w-auto h-auto object-contain object-center;
+        }
+      }
+    }
+  }
+}

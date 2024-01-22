@@ -1,4 +1,5 @@
 import { IPage } from '../interfaces'
+import { AboutUs } from './AboutUs/AboutUs'
 import { Careers } from './Careers/Careers'
 import { ContactUs } from './ContactUs/ContactUs'
 import { Home } from './Home/Home'
@@ -18,5 +19,10 @@ export const pages: IPage[] = [
     title: 'Contact Us',
     path: '/contact-us',
     element: <ContactUs />,
+  },
+  {
+    title: 'About Us',
+    path: '/about-us',
+    element: <AboutUs />,
   },
 ]
