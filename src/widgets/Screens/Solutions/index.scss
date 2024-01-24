@@ -1,0 +1,13 @@
+.solutions-title {
+  @apply flex flex-col items-start gap-[4vh];
+}
+
+.solutions-subtitle {
+  @apply text-[1.389vw] font-normal leading-[150%];
+
+  color: $black-5;
+}
+
+.solutions-title-group {
+  @apply flex flex-col gap-[5.8vh];
+}

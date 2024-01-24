@@ -1,0 +1,23 @@
+.solutionSingle {
+  &Container {
+    @apply pt-[21.6vh] pb-[27.7vh] w-full flex flex-col gap-[14vh] px-[11.574vw];
+  }
+
+  &Card {
+    @apply p-[3.472vw] rounded-[1.505vw] flex flex-col gap-[2.6vh] items-start min-h-[55.3vh] h-fit bg-white relative w-full;
+
+    > h3,
+    p {
+      @apply max-w-[21.991vw] w-full;
+    }
+
+    p {
+      @apply leading-[150%] font-normal text-[1.389vw];
+      color: $black-5;
+    }
+
+    img {
+      @apply rounded-tl-[1.389vw] rounded-br-[1.389vw] object-cover object-top w-[46.875vw] h-[49vh] absolute right-0 bottom-0;
+    }
+  }
+}

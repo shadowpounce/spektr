@@ -1,0 +1,41 @@
+.hero {
+  &Container {
+    @apply px-[11.574vw] pt-[17.5vh] pb-[13.1vh] w-full;
+  }
+
+  &Subtitle {
+    @apply text-[1.389vw] leading-[150%] text-black;
+  }
+
+  &Title {
+    @apply flex flex-col items-start gap-[5vh];
+  }
+
+  &Picture {
+    @apply w-[37.326vw] h-[32.407vw] object-contain object-center;
+  }
+
+  &Wrapper {
+    @apply w-full flex items-stretch gap-[6.944vw];
+  }
+
+  &Calendly {
+    @apply flex flex-col items-center gap-[2.8vh];
+
+    > p {
+      @apply text-[0.810vw] font-medium;
+
+      a {
+        @apply text-[#2B6AF6];
+      }
+    }
+
+    .calendly {
+      @apply min-w-[32.407vw] w-[32.407vw] h-[30.382vw] min-h-[30.382vw];
+    }
+
+    .img {
+      @apply w-[1.273vw] h-[1.273vw] object-cover rounded-full object-center inline-block;
+    }
+  }
+}

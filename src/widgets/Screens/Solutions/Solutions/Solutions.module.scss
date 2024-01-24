@@ -1,0 +1,107 @@
+.solutions {
+  &Container {
+    @apply px-[2.315vw] w-full pt-[21.6vh];
+  }
+
+  &Wrapper {
+    @apply w-full px-[9.259vw] pb-[10.5vh];
+
+    p[class*='solutions-subtitle'] {
+      @apply max-w-[42.708vw] w-full;
+    }
+  }
+
+  &List {
+    @apply w-full flex flex-col items-stretch gap-[6vh];
+
+    &Item {
+      @apply flex flex-col bg-white rounded-[1.389vw];
+
+      .head {
+        @apply pt-[10vh] pb-[11.8vh] px-[9.259vw] flex items-start gap-[13.600vw];
+
+        .title {
+          @apply max-w-[24.306vw] w-full;
+        }
+
+        .desc {
+          @apply max-w-[31.539vw] w-full flex flex-col items-start gap-[2.6vh];
+
+          p {
+            @apply leading-[150%] text-[1.215vw];
+          }
+        }
+      }
+
+      .body {
+        @apply p-[1.910vw] rounded-[1.389vw] overflow-hidden relative flex items-start justify-end h-[56.7vh];
+
+        background-color: $black;
+
+        button {
+          color: #fff !important;
+        }
+
+        .graph {
+          @apply absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%];
+
+          svg {
+            @apply w-full h-full;
+          }
+        }
+      }
+    }
+  }
+
+  &Quote {
+    @apply mt-[10.2vh] mb-[21.7vh] w-full flex items-stretch;
+
+    > div {
+      @apply flex-1 rounded-[1.389vw] overflow-hidden max-w-[50%] w-full;
+    }
+
+    .quote {
+      @apply p-[3.472vw] pr-[10.243vw] flex flex-col gap-[6.5vh];
+
+      &Element {
+        @apply text-[1.620vw] leading-[125%] text-black;
+
+        span {
+          @apply text-[2.894vw];
+        }
+      }
+
+      .bottom {
+        .info {
+          @apply flex flex-col items-start gap-[1.6vh];
+
+          p {
+            @apply text-[1.389vw] font-semibold leading-[120%];
+
+            color: $black;
+          }
+
+          span {
+            @apply leading-[150%];
+          }
+        }
+
+        .logos {
+          @apply flex items-center gap-[1.447vw] text-[0.810vw] font-normal leading-[150%];
+
+          color: $black-6;
+
+          .logo {
+            @apply max-w-[3.762vw] w-full h-auto object-contain object-center last:max-w-[7.5vw];
+          }
+        }
+      }
+    }
+
+    .photo {
+      img {
+        @apply w-full h-full object-cover object-center;
+      }
+    }
+  }
+}
