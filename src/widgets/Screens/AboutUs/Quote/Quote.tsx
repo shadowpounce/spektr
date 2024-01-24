@@ -59,7 +59,7 @@ export const Quote = () => {
           </p>
           <div className={styles.quoteAuthor}>
             <img
-              src="/public/images/AboutUs/Quote/photo.png"
+              src="/images/AboutUs/Quote/photo.png"
               alt=""
               className={styles.photo}
             />
@@ -75,17 +75,17 @@ export const Quote = () => {
           <p className="link-2 black-7">Our investors</p>
           <div className={styles.logos}>
             <img
-              src="/public/images/AboutUs/Quote/1.png"
+              src="/images/AboutUs/Quote/1.png"
               alt=""
               className={styles.logo}
             />
             <img
-              src="/public/images/AboutUs/Quote/2.png"
+              src="/images/AboutUs/Quote/2.png"
               alt=""
               className={styles.logo}
             />
             <img
-              src="/public/images/AboutUs/Quote/3.png"
+              src="/images/AboutUs/Quote/3.png"
               alt=""
               className={styles.logo}
             />

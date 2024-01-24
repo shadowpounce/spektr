@@ -24,7 +24,7 @@ export const Mission = () => {
             </p>
           </div>
           <div className={styles.missionTeam}>
-            <img src="/public/images/AboutUs/Mission/team.png" alt="" />
+            <img src="/images/AboutUs/Mission/team.png" alt="" />
           </div>
         </div>
         <div className={styles.group}>
@@ -32,16 +32,13 @@ export const Mission = () => {
             Our team includes financial leaders from
           </p>
           <div className={styles.logos}>
-            <img src="/public/images/AboutUs/Mission/Citi logo.svg" alt="" />
-            <img src="/public/images/AboutUs/Mission/Google logo.svg" alt="" />
-            <img src="/public/images/AboutUs/Mission/Group 2269.svg" alt="" />
-            <img src="/public/images/AboutUs/Mission/Meta logo.svg" alt="" />
-            <img src="/public/images/AboutUs/Mission/Vector.svg" alt="" />
-            <img src="/public/images/AboutUs/Mission/layer1.svg" alt="" />
-            <img
-              src="/public/images/AboutUs/Mission/robinhood logo.svg"
-              alt=""
-            />
+            <img src="/images/AboutUs/Mission/Citi logo.svg" alt="" />
+            <img src="/images/AboutUs/Mission/Google logo.svg" alt="" />
+            <img src="/images/AboutUs/Mission/Group 2269.svg" alt="" />
+            <img src="/images/AboutUs/Mission/Meta logo.svg" alt="" />
+            <img src="/images/AboutUs/Mission/Vector.svg" alt="" />
+            <img src="/images/AboutUs/Mission/layer1.svg" alt="" />
+            <img src="/images/AboutUs/Mission/robinhood logo.svg" alt="" />
           </div>
         </div>
       </div>

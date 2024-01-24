@@ -21,7 +21,7 @@ export const History = () => {
             </div>
             <div className={styles.historyBlock}>
               <img
-                src="/public/images/AboutUs/History/bg.png"
+                src="/images/AboutUs/History/bg.png"
                 alt=""
                 className={styles.bg}
               />

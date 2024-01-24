@@ -18,27 +18,15 @@ export const BookDemoBanner = () => {
         </div>
         <div className={styles.cards}>
           <div className={styles.card}>
-            <img
-              src="/public/images/Banner/1.png"
-              alt=""
-              className={styles.photo}
-            />
+            <img src="/images/Banner/1.png" alt="" className={styles.photo} />
             <div></div>
           </div>
           <div className={styles.card}>
-            <img
-              src="/public/images/Banner/2.png"
-              alt=""
-              className={styles.photo}
-            />
+            <img src="/images/Banner/2.png" alt="" className={styles.photo} />
             <div></div>
           </div>
           <div className={styles.card}>
-            <img
-              src="/public/images/Banner/3.png"
-              alt=""
-              className={styles.photo}
-            />
+            <img src="/images/Banner/3.png" alt="" className={styles.photo} />
             <div></div>
           </div>
         </div>
