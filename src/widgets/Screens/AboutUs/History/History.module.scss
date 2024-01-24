@@ -1,0 +1,37 @@
+.history {
+  &Container {
+    @apply w-full px-[11.574vw] pt-[11.5vh] pb-[15.2vh] flex flex-col gap-[8vh] items-stretch;
+  }
+
+  &Title {
+    @apply flex flex-col items-start gap-[3.5vh];
+  }
+
+  &Wrapper {
+    @apply w-full flex gap-[5.787vw] items-start;
+  }
+
+  &Text {
+    @apply max-w-[28.356vw] w-full;
+  }
+
+  &Blocks {
+    @apply grid gap-[1.157vw] flex-1;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-columns: 1fr;
+    grid-template-rows: 20vh 35vh;
+  }
+
+  &Block {
+    @apply rounded-[1.389vw] bg-white flex items-center justify-center gap-[2vh] relative object-cover overflow-hidden last:col-start-1 last:col-end-3;
+
+    .bg {
+      @apply absolute z-[0] left-0 top-0 w-full h-full object-cover object-center pointer-events-none;
+    }
+
+    > * {
+      @apply relative z-[1];
+    }
+  }
+}

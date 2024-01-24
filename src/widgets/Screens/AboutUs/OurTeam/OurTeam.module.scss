@@ -1,0 +1,27 @@
+.ourTeam {
+  @apply bg-white;
+
+  &Container {
+    @apply pt-[10vh] pb-[6.3vh] px-[11.574vw] w-full flex flex-col gap-[13.6vh];
+  }
+
+  &Wrapper {
+    @apply flex flex-col items-center text-center gap-[4.5vh];
+
+    p[class*='main-text'] {
+      @apply max-w-[37.616vw] w-full;
+    }
+  }
+
+  &Title {
+    @apply flex flex-col items-center text-center justify-center gap-[3vh];
+  }
+
+  &Members {
+    @apply flex gap-[2.662vw] w-full items-center justify-center;
+
+    > div {
+      @apply max-w-[13.310vw] w-full;
+    }
+  }
+}

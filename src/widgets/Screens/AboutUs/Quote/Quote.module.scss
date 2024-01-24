@@ -1,0 +1,41 @@
+.quote {
+  &Container {
+    @apply py-[17vh] px-[11.574vw] flex flex-col items-stretch w-full gap-[15.4vh];
+  }
+
+  &Wrapper {
+    @apply flex flex-col items-center gap-[4.5vh];
+  }
+
+  &Investors {
+    @apply pt-[6.2vh] flex flex-col items-center gap-[5vh];
+
+    border-top: 0.059vw solid rgb(114, 114, 126, 0.4);
+
+    .logos {
+      @apply flex items-center justify-center w-full gap-[9.028vw];
+
+      .logo {
+        @apply max-w-[17.361vw] w-full h-auto object-contain object-center;
+      }
+    }
+  }
+
+  &Element {
+    @apply text-center leading-[110%] tracking-[-0.051vw] text-[2.315vw];
+
+    color: $gray-2;
+  }
+
+  &Author {
+    @apply flex gap-[1.157vw] items-center;
+
+    .photo {
+      @apply w-[5.787vw] h-[5.787vw] rounded-full object-cover object-center;
+    }
+
+    .info {
+      @apply flex flex-col items-start gap-[1vh];
+    }
+  }
+}

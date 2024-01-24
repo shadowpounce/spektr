@@ -1,3 +1,4 @@
+import { BookDemoBanner } from '../../../shared/BookDemoBanner/BookDemoBanner'
 import { Blog } from './Blog/Blog'
 import { Hero } from './Hero/Hero'
 import { ScreenCast } from './ScreenCast/ScreenCast'
@@ -12,4 +13,5 @@ export const HomeScreens = [
   <Trust />,
   <UseCases />,
   <Blog />,
+  <BookDemoBanner />,
 ]

@@ -1,3 +1,4 @@
+import { BookDemoBanner } from '../../../shared/BookDemoBanner/BookDemoBanner'
 import { Hero } from './Hero/Hero'
 import { OpenPositions } from './OpenPositions/OpenPositions'
 import { Perks } from './Perks/Perks'
@@ -8,4 +9,5 @@ export const CareersScreens = [
   <Welcome />,
   <Perks />,
   <OpenPositions />,
+  <BookDemoBanner />,
 ]

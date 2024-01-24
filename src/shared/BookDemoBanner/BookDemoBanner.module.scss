@@ -1,17 +1,49 @@
 .bookDemoBanner {
-  @apply py-[8.5vh] px-[3.848vw] rounded-[1.389vw] relative w-full;
-
-  background-color: $black-2;
+  @apply w-full p-[2.315vw] h-screen;
 
   .content {
-    @apply flex flex-col items-start gap-[3.5vh];
+    @apply w-full h-full bg-white rounded-[1.389vw] flex items-center gap-[8.102vw] px-[9.259vw];
 
-    .title {
-      @apply flex flex-col gap-[2.5vh];
+    .text {
+      @apply flex flex-col items-start gap-[3.5vh];
+
+      h2 {
+        @apply whitespace-nowrap;
+      }
     }
-  }
 
-  .graph {
-    @apply absolute right-0 top-1/2 translate-y-[-50%] w-[41.956vw] h-auto;
+    .cards {
+      @apply flex gap-[1.736vw] translate-y-[25%];
+
+      .card {
+        @apply w-[13.600vw] min-w-[13.600vw] h-[40vh] flex items-center justify-start  relative;
+
+        > div {
+          @apply w-full h-full opacity-[0.25] rounded-[1.389vw];
+        }
+
+        &:first-child {
+          > div {
+            @apply bg-[#FDA7D9];
+          }
+        }
+
+        &:nth-child(2) {
+          > div {
+            @apply bg-[#2BBEAF];
+          }
+        }
+
+        &:nth-child(3) {
+          > div {
+            @apply bg-[#FCAC04];
+          }
+        }
+
+        .photo {
+          @apply w-[13.600vw] h-[13.600vw] rounded-full translate-y-[-50%] absolute left-0 top-0;
+        }
+      }
+    }
   }
 }

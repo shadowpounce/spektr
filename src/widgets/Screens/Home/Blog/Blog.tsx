@@ -19,7 +19,6 @@ export const Blog = () => {
             ))}
           </div>
         </div>
-        <BookDemoBanner />
       </div>
     </section>
   )

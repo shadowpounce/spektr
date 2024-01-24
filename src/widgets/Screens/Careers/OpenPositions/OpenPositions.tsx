@@ -1,11 +1,11 @@
-import clsx from "clsx";
-import styles from "./OpenPositions.module.scss";
-import { BookDemoBanner } from "../../../../shared/BookDemoBanner/BookDemoBanner";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
+import clsx from 'clsx'
+import styles from './OpenPositions.module.scss'
+import { BookDemoBanner } from '../../../../shared/BookDemoBanner/BookDemoBanner'
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
 
 export const OpenPositions = () => {
-  const root = useRef<HTMLDivElement>(null);
+  const root = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -17,12 +17,12 @@ export const OpenPositions = () => {
         animation: gsap
           .timeline()
           .to(document.body, {
-            backgroundColor: "#1a1a1e",
+            backgroundColor: '#1a1a1e',
           })
           .to(
-            "#header",
+            '#header',
             {
-              backgroundColor: "#f7f7f8",
+              backgroundColor: '#f7f7f8',
             },
             0
           )
@@ -30,26 +30,26 @@ export const OpenPositions = () => {
           .to(
             document.body,
             {
-              backgroundColor: "#f7f7f8",
+              backgroundColor: '#f7f7f8',
             },
             1
           )
           .to(
-            "#header",
+            '#header',
             {
-              backgroundColor: "transparent",
+              backgroundColor: 'transparent',
             },
             1
           ),
-      });
-    });
+      })
+    })
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
   return (
     <>
-      <section ref={root} className={clsx("section", styles.openPositions)}>
+      <section ref={root} className={clsx('section', styles.openPositions)}>
         <div className={styles.openPositionsContainer}>
           <div className={styles.openPositionsWrapper}>
             <div className={styles.openPositionsTitle}>
@@ -115,9 +115,6 @@ export const OpenPositions = () => {
           </div>
         </div>
       </section>
-      <div className={styles.openPositionsBanner}>
-        <BookDemoBanner />
-      </div>
     </>
-  );
-};
+  )
+}

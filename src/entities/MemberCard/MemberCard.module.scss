@@ -1,0 +1,19 @@
+.memberCard {
+  @apply flex flex-col gap-[2vh] pb-[1vh];
+
+  .photo {
+    @apply w-full rounded-[1.389vw] overflow-hidden;
+
+    .photoImage {
+      @apply w-full pt-[100%] relative;
+
+      img {
+        @apply absolute left-0 top-0 w-full h-full object-cover object-center;
+      }
+    }
+  }
+
+  .info {
+    @apply flex flex-col gap-[1vh] items-start;
+  }
+}

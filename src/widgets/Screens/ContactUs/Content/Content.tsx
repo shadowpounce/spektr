@@ -1,12 +1,12 @@
-import clsx from "clsx";
-import styles from "./Content.module.scss";
-import { CircleButton } from "../../../../shared/CircleButton/CircleButton";
-import { BookDemoBanner } from "../../../../shared/BookDemoBanner/BookDemoBanner";
-import GoogleMap from "./GoogleMap";
+import clsx from 'clsx'
+import styles from './Content.module.scss'
+import { CircleButton } from '../../../../shared/CircleButton/CircleButton'
+import { BookDemoBanner } from '../../../../shared/BookDemoBanner/BookDemoBanner'
+import GoogleMap from './GoogleMap'
 
 export const Content = () => {
   return (
-    <section className={clsx("section", styles.content)}>
+    <section className={clsx('section', styles.content)}>
       <div className={styles.newsAndPress}>
         <div className="descriptor">
           Press kit
@@ -42,7 +42,6 @@ export const Content = () => {
           </div>
         </div>
       </div>
-      <BookDemoBanner />
     </section>
-  );
-};
+  )
+}
