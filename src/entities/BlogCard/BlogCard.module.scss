@@ -1,6 +1,18 @@
 .blogCard {
   @apply flex flex-col gap-[2.5vh] rounded-[1.389vw] bg-white px-[1.736vw] py-[2.604vw];
 
+  &.big {
+    @apply flex-row items-stretch pt-[2.315vw] pb-[2.604vw] pl-[2.604vw] pr-[4.398vw] gap-[6.481vw];
+
+    .thumbnail {
+      @apply h-[unset];
+    }
+  }
+
+  .column {
+    @apply flex flex-col gap-[3vh];
+  }
+
   .thumbnail {
     @apply h-[11.574vw] w-full rounded-[1.389vw] overflow-hidden;
 
@@ -13,10 +25,12 @@
     @apply flex items-center gap-[0.868vw];
 
     .category {
-      @apply p-[0.579vw] rounded-[0.347vw] flex items-center justify-center;
+      @apply p-[0.579vw] rounded-[5.787vw] flex items-center justify-center;
 
-      border: 0.059vw solid $gray;
-      color: $black-2;
+      background-color: $black;
+
+      border: 0.059vw solid $black;
+      color: #fff;
     }
 
     .date {

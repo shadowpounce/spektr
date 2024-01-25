@@ -48,6 +48,14 @@ h6 {
   color: $black-4;
 }
 
+.text-20 {
+  @apply text-[1.157vw];
+}
+
+.text-24 {
+  @apply text-[1.389vw];
+}
+
 .card-text {
   @apply font-medium leading-[130%];
   color: $black-5;

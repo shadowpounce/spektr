@@ -1,13 +1,13 @@
 import React, { useContext, useEffect } from 'react'
 import { MainContext } from '../../app/providers/Context/MainContext'
-import { AboutUsScreens } from '../../widgets/Screens/AboutUs'
+import { BlogScreens } from '../../widgets/Screens/Blog'
 
-export const AboutUs = () => {
+export const Blog = () => {
   const { setCurrentPage } = useContext(MainContext)
 
   useEffect(() => {
-    setCurrentPage('about-us')
+    setCurrentPage('blog')
   }, [])
 
-  return <>{AboutUsScreens.map((screen) => screen)}</>
+  return <>{BlogScreens.map((screen) => screen)}</>
 }

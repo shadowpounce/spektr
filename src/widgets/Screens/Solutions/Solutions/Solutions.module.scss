@@ -54,54 +54,6 @@
   }
 
   &Quote {
-    @apply mt-[10.2vh] mb-[21.7vh] w-full flex items-stretch;
-
-    > div {
-      @apply flex-1 rounded-[1.389vw] overflow-hidden max-w-[50%] w-full;
-    }
-
-    .quote {
-      @apply p-[3.472vw] pr-[10.243vw] flex flex-col gap-[6.5vh];
-
-      &Element {
-        @apply text-[1.620vw] leading-[125%] text-black;
-
-        span {
-          @apply text-[2.894vw];
-        }
-      }
-
-      .bottom {
-        .info {
-          @apply flex flex-col items-start gap-[1.6vh];
-
-          p {
-            @apply text-[1.389vw] font-semibold leading-[120%];
-
-            color: $black;
-          }
-
-          span {
-            @apply leading-[150%];
-          }
-        }
-
-        .logos {
-          @apply flex items-center gap-[1.447vw] text-[0.810vw] font-normal leading-[150%];
-
-          color: $black-6;
-
-          .logo {
-            @apply max-w-[3.762vw] w-full h-auto object-contain object-center last:max-w-[7.5vw];
-          }
-        }
-      }
-    }
-
-    .photo {
-      img {
-        @apply w-full h-full object-cover object-center;
-      }
-    }
+    @apply mt-[10.2vh] mb-[21.7vh];
   }
 }

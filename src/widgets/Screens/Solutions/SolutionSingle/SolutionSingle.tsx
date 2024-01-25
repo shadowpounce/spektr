@@ -34,7 +34,7 @@ export const SolutionSingle = () => {
               <div className={styles.solutionSingleCard}>
                 <h3>{item.title}</h3>
                 <p>{item.subtitle}</p>
-                <img src={item.img} alt="" />
+                <img src={item} alt="" />
               </div>
             ))}
           </>

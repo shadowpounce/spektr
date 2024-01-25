@@ -1,9 +1,12 @@
 import { IPage } from '../interfaces'
 import { Integrations } from '../widgets/Screens/Integrations/Integrations/Integrations'
 import { AboutUs } from './AboutUs/AboutUs'
+import { Blog } from './Blog/Blog'
 import { Careers } from './Careers/Careers'
 import { ContactUs } from './ContactUs/ContactUs'
 import { Home } from './Home/Home'
+import { PersonaOne } from './Persona/PersonaOne'
+import { PersonaTwo } from './Persona/PersonaTwo'
 import { Schedule } from './Schedule/Schedule'
 import { Solution } from './Solution/Solution'
 import { Solutions } from './Solutions/Solutions'
@@ -48,5 +51,20 @@ export const pages: IPage[] = [
     title: 'Solution',
     path: '/solutions/:slug',
     element: <Solution />,
+  },
+  {
+    title: 'Blog',
+    path: '/blog',
+    element: <Blog />,
+  },
+  {
+    title: 'Persona One',
+    path: '/compliance',
+    element: <PersonaOne />,
+  },
+  {
+    title: 'PersonaTwo',
+    path: '/operations',
+    element: <PersonaTwo />,
   },
 ]

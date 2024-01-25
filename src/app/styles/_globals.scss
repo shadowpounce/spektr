@@ -26,6 +26,18 @@ body {
   }
 }
 
+.button-filter {
+  @apply h-[5vh] px-[1.736vw] flex items-center justify-center rounded-[5.787vw] transition-colors duration-[400ms] font-semibold leading-[125%];
+
+  color: $black-7;
+  background-color: transparent;
+
+  &.active {
+    background-color: $black-2;
+    color: #fff;
+  }
+}
+
 .descriptor {
   @apply p-[0.926vw] rounded-[5.787vw] flex items-center justify-center font-bold leading-[150%] text-[0.810vw] gap-[0.579vw];
 
