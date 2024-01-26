@@ -1,0 +1,27 @@
+.talkWith {
+  @apply p-[2.315vw];
+
+  &Title {
+    @apply flex flex-col items-start gap-[3vh];
+  }
+
+  &Container {
+    @apply w-full bg-white rounded-[1.389vw] pt-[7.4vh] pb-[13vh] px-[9.259vw] flex flex-col items-stretch gap-[28.4vh];
+  }
+
+  &Wrapper {
+    @apply flex items-end gap-[9.549vw];
+
+    p[class*='main-text'] {
+      @apply max-w-[26.042vw] w-full;
+    }
+  }
+
+  &Cards {
+    @apply flex justify-between;
+  }
+
+  &Card {
+    @apply flex flex-col gap-[3vh] items-start;
+  }
+}

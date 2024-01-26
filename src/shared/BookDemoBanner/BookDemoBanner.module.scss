@@ -14,36 +14,6 @@
 
     .cards {
       @apply flex gap-[1.736vw] translate-y-[25%];
-
-      .card {
-        @apply w-[13.600vw] min-w-[13.600vw] h-[40vh] flex items-center justify-start  relative;
-
-        > div {
-          @apply w-full h-full opacity-[0.25] rounded-[1.389vw];
-        }
-
-        &:first-child {
-          > div {
-            @apply bg-[#FDA7D9];
-          }
-        }
-
-        &:nth-child(2) {
-          > div {
-            @apply bg-[#2BBEAF];
-          }
-        }
-
-        &:nth-child(3) {
-          > div {
-            @apply bg-[#FCAC04];
-          }
-        }
-
-        .photo {
-          @apply w-[13.600vw] h-[13.600vw] rounded-full translate-y-[-50%] absolute left-0 top-0;
-        }
-      }
     }
   }
 }

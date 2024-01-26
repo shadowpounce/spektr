@@ -9,17 +9,18 @@ export const Solutions = () => {
       <div className={styles.solutionsContainer}>
         <div className={styles.solutionsWrapper}>
           <div className={styles.solutionsTitle}>
-            <div className="descriptor">How it works?</div>
+            <div className="descriptor">How does it works?</div>
             <h2>
-              Automate manual <br /> processes
+              Built to automate <br /> 90% of your tasks
             </h2>
           </div>
           <div className={styles.solutionsText}>
             <p className="main-text">
-              Our process map approach streamlines ongoing due diligence,
-              offering <b>simplicity, adaptability, and precision. </b>
+              You deserve a platform built with your needs in mind. Manage all
+              aspects of your ongoing due diligence journey in a{' '}
+              <b>single process map.</b>
             </p>
-            <CircleButton text={'Read more'} />
+            <CircleButton text={'Try out the platform'} />
           </div>
         </div>
         <div className={styles.solutionsCards}>
@@ -28,18 +29,10 @@ export const Solutions = () => {
               data-duration="1"
               className={clsx(styles.solutionsCard, 'reveal')}
             >
+              <div className={styles.solutionsCardGraph}>{card.svg}</div>
               <div className={styles.solutionsCardText}>
                 <p className={styles.title}>{card.title}</p>
                 <p className={styles.text}>{card.text}</p>
-              </div>
-              <div
-                style={{
-                  height: card.svgHeight,
-                  width: card.svgWidth,
-                }}
-                className={styles.solutionsCardGraph}
-              >
-                {card.svg}
               </div>
             </div>
           ))}

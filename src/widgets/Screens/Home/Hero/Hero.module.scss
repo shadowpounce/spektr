@@ -6,6 +6,10 @@
   &Wrapper {
     @apply flex items-center flex-col gap-[4.5vh];
 
+    > p {
+      @apply max-w-[36.458vw];
+    }
+
     &Buttons {
       @apply flex items-center gap-[1.447vw];
     }
@@ -38,7 +42,7 @@
 
     &:nth-child(4) {
       .heroBlockIcon {
-        background-color: rgba(215, 215, 219, 0.25);
+        background-color: rgba(252, 172, 4, 0.25);
       }
     }
 

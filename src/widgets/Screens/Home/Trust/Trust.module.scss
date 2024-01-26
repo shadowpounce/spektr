@@ -14,46 +14,10 @@
   }
 
   &Content {
-    @apply flex gap-[10.127vw] items-start;
-  }
+    @apply w-full flex flex-col items-stretch relative;
 
-  &Investors {
-    @apply flex flex-col gap-[1.8vh] max-w-[25.174vw] w-full;
-
-    .card {
-      @apply p-[1.157vw] w-full flex items-start relative h-[19.965vw] rounded-[1.389vw] overflow-hidden;
-
-      &Bg {
-        @apply w-full h-full absolute left-0 top-0 pointer-events-none z-[-1];
-
-        svg {
-          @apply w-full h-full;
-        }
-      }
-    }
-
-    .label {
-      @apply p-[1.447vw] pt-[1.157vw] pr-[1.157vw] flex flex-col gap-[0.6vh] w-full bg-white rounded-[1.389vw];
-
-      .row {
-        @apply flex items-center justify-between;
-      }
-    }
-  }
-
-  &TextBlocks {
-    @apply relative;
-
-    .blocks {
-      @apply flex flex-col gap-[13.3vh] max-w-[30.671vw] w-full max-h-[60vh] h-full overflow-y-scroll;
-
-      &::-webkit-scrollbar {
-        @apply appearance-none;
-      }
-    }
-
-    .fade {
-      @apply absolute bottom-0 left-0 w-full h-[35%] pointer-events-none;
+    .smoke {
+      @apply absolute max-w-[50vw] min-w-[50vw] right-0 bottom-0 h-[100vh] translate-x-[50%];
 
       background: linear-gradient(
         0deg,
@@ -63,11 +27,47 @@
     }
   }
 
-  &TextBlock {
-    @apply flex flex-col gap-[4.8vh];
+  &Item {
+    @apply flex items-center justify-between gap-[8.218vw];
 
-    .texts {
-      @apply flex flex-col gap-[3vh];
+    &:not(:first-child) {
+      .text {
+        @apply mt-[6vh];
+      }
+    }
+
+    .block {
+      @apply max-w-[32.523vw] min-w-[32.523vw] w-[32.523vw] flex flex-col items-stretch;
+
+      .rect {
+        @apply py-[1.389vw] px-[1.944vw] rounded-[1.389vw] bg-white leading-[150%] font-semibold;
+      }
+
+      .graph {
+        @apply h-[16vh] rounded-[1.389vw];
+
+        background-color: $black;
+
+        img {
+          @apply w-full h-full object-center object-cover;
+        }
+      }
+
+      .row {
+        @apply flex items-center justify-between w-full;
+
+        span {
+          @apply w-fit;
+        }
+
+        > div:nth-child(2) {
+          @apply max-w-[26.910vw] w-full;
+        }
+      }
+    }
+
+    .text {
+      @apply flex flex-col items-start gap-[4.8vh] max-w-[28.935vw] min-w-[28.935vw];
     }
   }
 }

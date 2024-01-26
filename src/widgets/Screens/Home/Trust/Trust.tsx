@@ -10,73 +10,87 @@ export const Trust = () => {
           <div className={styles.trustTitle}>
             <div className="descriptor white">About us</div>
             <h2>
-              We’ve done it <br /> before
+              Redefining <br /> compliance, again
             </h2>
           </div>
           <div className={styles.trustContent}>
-            <div className={styles.trustInvestors}>
-              <div className={styles.card}>
-                <div className={styles.cardBg}>
-                  <svg
-                    width="436"
-                    height="345"
-                    viewBox="0 0 436 345"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0_872_819)">
-                      <rect width="436" height="345" fill="#2C2C30" />
-                      <path
-                        opacity="0.56"
-                        d="M0 76.0795H436M0 137.933H436M0 199.787H436M0 261.641H436M0 323.495H436M369.763 15V392M308.116 15L308.116 392M246.482 15L246.482 392M184.835 15L184.835 392M123.188 15L123.188 392M61.5479 15V392"
-                        stroke="url(#paint0_radial_872_819)"
-                        stroke-opacity="0.63"
-                      />
-                      <circle cx="218" cy="317" r="225" fill="#2BBEAF" />
-                    </g>
-                    <defs>
-                      <radialGradient
-                        id="paint0_radial_872_819"
-                        cx="0"
-                        cy="0"
-                        r="1"
-                        gradientUnits="userSpaceOnUse"
-                        gradientTransform="translate(218.517 190.83) rotate(90) scale(209.962 242.82)"
-                      >
-                        <stop stop-color="white" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
-                      </radialGradient>
-                      <clipPath id="clip0_872_819">
-                        <rect width="436" height="345" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+            <div className={styles.smoke}></div>
+            <div className={styles.trustItem}>
+              <div className={styles.block}>
+                <div className={styles.row}>
+                  <span className="text-12 font-bold leading-[150%] text-black">
+                    2020
+                  </span>
+                  <div className={styles.rect}>Founded HelloFlow</div>
                 </div>
-                <div className="descriptor dark">Our investors</div>
+                <div className={styles.row}>
+                  <div></div>
+                  <div className={styles.graph}>
+                    <img src="/images/Home/Trust/graph1.svg" alt="" />
+                  </div>
+                </div>
+                <div className={styles.row}>
+                  <span className="text-12 font-bold leading-[150%] text-black">
+                    2021
+                  </span>
+                  <div className={styles.rect}>Acquired by Trulioo</div>
+                </div>
               </div>
-              <div className={styles.label}>
-                <a href="" className={clsx(styles.row, 'link-2')}>
-                  ISO 27001:2022
-                  <div className="link-icon"></div>
-                </a>
-                <p className="card-text">
-                  We are ISO® certificate holders that means our company
-                  internationally standardised.
+              <div className={styles.text}>
+                <h4>Our team has come a long way.</h4>
+                <p className="main-text">
+                  The spektr journey began a few years ago when our founders
+                  created HelloFlow, a no-code platform for client onboarding.
+                  It gained global recognition and was later acquired by the
+                  leader in global identity verification,{' '}
+                  <b className="text-[#2BBEAF]">Trulioo.</b>
                 </p>
               </div>
             </div>
-            <div className={styles.trustTextBlocks}>
-              <div className={styles.blocks}>
-                {trustTexts.map((t) => (
-                  <div className={styles.trustTextBlock}>
-                    <h4>{t.title}</h4>
-                    <div className={styles.texts}>
-                      {t.texts.map((text) => text)}
-                    </div>
+            <div className={styles.trustItem}>
+              <div className={styles.block}>
+                <div className={styles.row}>
+                  <span className="text-12 font-bold leading-[150%] text-black">
+                    2023
+                  </span>
+                  <div className={styles.rect}>Founded spektr</div>
+                </div>
+                <div className={styles.row}>
+                  <div></div>
+                  <div className={styles.graph}>
+                    <img src="/images/Home/Trust/graph2.svg" alt="" />
                   </div>
-                ))}
+                </div>
+                <div className={styles.row}>
+                  <span></span>
+                  <div className={styles.rect}>Secured $4M investment</div>
+                </div>
               </div>
-              <div className={styles.fade}></div>
+              <div className={styles.text}>
+                <h4>Making compliance a better business.</h4>
+                <p className="main-text">
+                  Back in action at spektr, the original HelloFlow team is set
+                  to redefine the industry. Coming from diverse finance
+                  backgrounds, we understand the industry's growing challenges.
+                  That's why we're building a solution that transforms due
+                  diligence into a revenue-generating tool tailored to your
+                  business needs. <br />
+                  <br /> Let us handle your risk and monitoring tasks, offering
+                  a faster, safer, and budget-friendly alternative to
+                  traditional manual approaches
+                </p>
+              </div>
+            </div>
+            <div className={styles.trustItem}>
+              <div className={styles.block}>
+                <div className={styles.row}>
+                  <span className="text-12 font-bold leading-[150%] text-black">
+                    2024
+                  </span>
+                  <div className={styles.rect}>Launched spektr.com 🚀</div>
+                </div>
+              </div>
+              <div className={styles.text}></div>
             </div>
           </div>
         </div>

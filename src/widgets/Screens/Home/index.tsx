@@ -3,6 +3,7 @@ import { Blog } from './Blog/Blog'
 import { Hero } from './Hero/Hero'
 import { ScreenCast } from './ScreenCast/ScreenCast'
 import { Solutions } from './Solutions/Solutions'
+import { TalkWith } from './TalkWith/TalkWith'
 import { Trust } from './Trust/Trust'
 import { UseCases } from './UseCases/UseCases'
 
@@ -12,6 +13,7 @@ export const HomeScreens = [
   <Solutions />,
   <Trust />,
   <UseCases />,
+  <TalkWith />,
   <Blog />,
   <BookDemoBanner />,
 ]

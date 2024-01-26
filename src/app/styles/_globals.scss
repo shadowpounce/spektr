@@ -38,6 +38,47 @@ body {
   }
 }
 
+.people-card {
+  @apply w-[13.600vw] min-w-[13.600vw] h-[40vh] flex items-center justify-start relative;
+
+  > div {
+    @apply w-full h-full rounded-[1.389vw] flex flex-col items-center justify-end pb-[1.5vh];
+
+    > button {
+      color: #000 !important;
+    }
+  }
+
+  &:first-child {
+    > div {
+      background-color: rgba(253, 167, 217, 0.25);
+    }
+  }
+
+  &:nth-child(2) {
+    > div {
+      background-color: rgb(43, 190, 175, 0.25);
+    }
+  }
+
+  &:nth-child(3) {
+    > div {
+   
+      background-color: rgb(252, 172, 4, 0.25);
+    }
+  }
+
+  &:nth-child(4) {
+    > div {
+      background-color: rgba(234, 234, 236, 0.25);
+    }
+  }
+
+  .photo {
+    @apply w-[13.600vw] h-[13.600vw] rounded-full translate-y-[-50%] absolute left-0 top-0 z-[1];
+  }
+}
+
 .descriptor {
   @apply p-[0.926vw] rounded-[5.787vw] flex items-center justify-center font-bold leading-[150%] text-[0.810vw] gap-[0.579vw];
 
@@ -78,7 +119,7 @@ body {
     }
 
     border: 0.059vw solid $black-7;
-    background-color: #fff;
+    background-color: $gray-3;
     color: $black;
   }
 

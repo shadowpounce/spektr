@@ -70,7 +70,7 @@ export const ScreenCast = () => {
     <section ref={root} className={clsx("section", styles.screenCast)}>
       <div ref={rootContainer} className={styles.screenCastContainer}>
         <GsapMagnetic>
-          <button className="button primary-rounded">Journey</button>
+          <button className="button primary-rounded">Process</button>
         </GsapMagnetic>
         <div className={styles.screenCastVideo}>
           <img src="/images/Home/ScreenCast/video-preview.png" alt="" />

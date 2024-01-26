@@ -11,10 +11,12 @@ export const Blog = () => {
         <div className={styles.blogWrapper}>
           <div className={styles.blogTitle}>
             <div className="descriptor white">Blog</div>
-            <h2>Spektr updates</h2>
+            <h2>
+              Insights, trends and <br /> all things spektr
+            </h2>
           </div>
           <div className={styles.blogCards}>
-            {blogCards.map((card, idx) => (
+            {blogCards.slice(0, 3).map((card, idx) => (
               <BlogCard {...card} idx={idx} />
             ))}
           </div>

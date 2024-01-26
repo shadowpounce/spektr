@@ -8,10 +8,6 @@ export const navLinks = [
     url: '/resources',
   },
   {
-    title: 'Pricing',
-    url: '/pricing',
-  },
-  {
     title: 'Company',
     url: '/company',
   },

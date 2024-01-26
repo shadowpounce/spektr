@@ -1,45 +1,41 @@
 export const heroCards = [
   {
-    title: "Unlock Growth with spektr",
+    title: 'Fast track to growth',
     subtitle:
-      "Unlock growth with our no-code platform for limitless, compliant workflows.",
-    pills: [
-      "Commerical data modeling",
-      "Easy & fast deployment",
-      "Process automation",
-    ],
-    icon: "/images/Home/Hero/1.svg",
+      'Automate operations, explore data vendors, and add a strategic touch with commercial data modeling.',
+    pills: ['No-code platform', 'Easy & fast deployment', 'Process automation'],
+    icon: '/images/Home/Hero/1.svg',
   },
   {
-    title: "Maximise Client LTV",
+    title: 'Client retention value',
     subtitle:
-      "Automate client communication and increase speed to resolve alerts with spektr.",
+      'Speed up responses, tackle alerts and create a client journey that is built for the long term.',
     pills: [
-      "Instant & automated client communication",
-      "Continuous monitoring",
+      'Instant & automated client communication',
+      'Continuous monitoring',
     ],
-    icon: "/images/Home/Hero/2.svg",
+    icon: '/images/Home/Hero/2.svg',
   },
   {
-    title: "Automate Manual Processes",
+    title: 'Manual task automation',
     subtitle:
-      "Free up precious hours by automating slow manual and error-prone processes.",
+      'Save analyst hours and costs. Let automation take center stage for risk assessments, monitoring, and loops.',
     pills: [
-      "Automated risk assessment",
-      "Automated loops",
-      "Automated monitoring",
+      'Automated risk assessment',
+      'Automated loops',
+      'Automated monitoring',
     ],
-    icon: "/images/Home/Hero/3.svg",
+    icon: '/images/Home/Hero/3.svg',
   },
   {
-    title: "Boost Operational Efficiency",
+    title: 'Navigate vendors with ease',
     subtitle:
-      "Streamline compliance and monitoring processes and leverage our innovative solution.",
+      'Explore data vendors, enhance verifications, and trim down costs for boosted operational efficiency.',
     pills: [
-      "Easy & fast vendor integration",
-      "inspektr layer",
-      "Data vendor orchestration",
+      'Easy & fast vendor integration',
+      'Real-time collaboration',
+      'Data vendor orchestration',
     ],
-    icon: "/images/Home/Hero/4.svg",
+    icon: '/images/Home/Hero/4.svg',
   },
-];
+]

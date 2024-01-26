@@ -1,22 +1,24 @@
-import styles from "./Hero.module.scss";
-import clsx from "clsx";
-import { heroCards } from "./data";
+import styles from './Hero.module.scss'
+import clsx from 'clsx'
+import { heroCards } from './data'
 
 export const Hero = () => {
   return (
-    <section className={clsx("section", styles.hero)}>
+    <section className={clsx('section', styles.hero)}>
       <div className={styles.heroContainer}>
         <div className={styles.heroWrapper}>
           <h1 className="text-center">
-            Revenue driven <br /> compliance
+            Revenue Generating <br />
+            Compliance
           </h1>
           <p className="text-2 text-center">
-            We're on a mission to create the Ongoing Due Diligence and risk
-            tools of the future.
+            Unlock growth with risk management that's all about you. Spektr uses
+            automation, monitoring and feedback loops to stay in tune with your
+            client needs.
           </p>
           <div className={styles.heroWrapperButtons}>
             <a href="" className="button primary">
-              Get started
+              Talk to us
               <img
                 className="button-arrow"
                 src="/images/icons/button-black-arrow-right.svg"
@@ -24,12 +26,7 @@ export const Hero = () => {
               />
             </a>
             <a href="" className="button secondary">
-              Request Demo
-              <img
-                className="button-icon"
-                src="/images/icons/stars-emoji.png"
-                alt=""
-              />
+              Try it yourself
             </a>
           </div>
         </div>
@@ -39,7 +36,7 @@ export const Hero = () => {
               data-delay={`${idx * 0.065}`}
               className={clsx(
                 styles.heroBlock,
-                "reveal translate-y-1/4 opacity-0"
+                'reveal translate-y-1/4 opacity-0'
               )}
             >
               <div className={styles.heroBlockIcon}>
@@ -61,5 +58,5 @@ export const Hero = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

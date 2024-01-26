@@ -17,16 +17,16 @@ export const BookDemoBanner = () => {
           <CircleButton text="Talk with us" />
         </div>
         <div className={styles.cards}>
-          <div className={styles.card}>
-            <img src="/images/Banner/1.png" alt="" className={styles.photo} />
+          <div className={'people-card'}>
+            <img src="/images/Banner/1.png" alt="" className={'photo'} />
             <div></div>
           </div>
-          <div className={styles.card}>
-            <img src="/images/Banner/2.png" alt="" className={styles.photo} />
+          <div className={'people-card'}>
+            <img src="/images/Banner/2.png" alt="" className={'photo'} />
             <div></div>
           </div>
-          <div className={styles.card}>
-            <img src="/images/Banner/3.png" alt="" className={styles.photo} />
+          <div className={'people-card'}>
+            <img src="/images/Banner/3.png" alt="" className={'photo'} />
             <div></div>
           </div>
         </div>

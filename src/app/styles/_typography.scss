@@ -48,6 +48,10 @@ h6 {
   color: $black-4;
 }
 
+.text-12 {
+  @apply text-[0.694vw];
+}
+
 .text-20 {
   @apply text-[1.157vw];
 }
