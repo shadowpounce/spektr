@@ -41,7 +41,7 @@ export const Integrations = () => {
                 <p className={styles.title}>{card.name}</p>
               </div>
               <p className="card-text">{card.text}</p>
-              <div className={styles.arrow}>
+              {/* <div className={styles.arrow}>
                 <svg
                   width="17"
                   height="12"
@@ -56,7 +56,7 @@ export const Integrations = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

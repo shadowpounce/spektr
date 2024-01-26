@@ -12,7 +12,7 @@ export const SolutionSingle = () => {
   useEffect(() => {
     if (slug) {
       const foundSolution = solutions.find(
-        (sol) => sol.descriptor.toLowerCase() === slug.toLowerCase()
+        (sol) => sol.slug.toLowerCase() === slug.toLowerCase()
       )
 
       if (foundSolution) {
@@ -34,7 +34,7 @@ export const SolutionSingle = () => {
               <div className={styles.solutionSingleCard}>
                 <h3>{item.title}</h3>
                 <p>{item.subtitle}</p>
-                <img src={item} alt="" />
+                <img src={item.img} alt="" />
               </div>
             ))}
           </>

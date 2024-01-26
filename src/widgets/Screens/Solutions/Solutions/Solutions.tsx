@@ -43,11 +43,16 @@ export const Solutions = () => {
                 </div>
                 <div className={styles.desc}>
                   <p className="black-5 font-normal">{s.cardDesc}</p>
-                  <CircleButton text="Read more" />
+                  <CircleButton link={true} url={s.link} text="Read more" />
                 </div>
               </div>
               <div className={styles.body}>
-                <CircleButton colorType="secondary" text="Try the product" />
+                <CircleButton
+                  link={true}
+                  url={'app.spektr.com/login'}
+                  colorType="secondary"
+                  text="Try the product"
+                />
                 <div
                   style={{
                     width: `${s.cardWidth}px`,
